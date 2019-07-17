@@ -25,12 +25,12 @@
 
     async function getLastSensorData(id)
     {
-    	let response = await fetchAsync("https://smartgreen.cc/demo/api/api_GET.php?getSensorData&limt=1&sensor_id="+id);
+    	let response = await fetchAsync("https://smartgreen.cc/demo/api/api_GET.php?getSensorData&limit=1&sensor_id="+id);
     	return parse_s_podvoxom(response).data;
     }
 
     async function getLastSensorRecordTime(id)
     {
-    	let response = await fetchAsync("https://smartgreen.cc/demo/api/api_GET.php?getSensorData&limt=1&sensor_id="+id);
+    	let response = await fetchAsync("https://smartgreen.cc/demo/api/api_GET.php?getSensorData&limit=1&sensor_id="+id);
     	return parse_s_podvoxom(response).date;
     }
